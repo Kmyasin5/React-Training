@@ -1,0 +1,18 @@
+ES6 Notes:
+
+* Difference of Var and let:
+
+A new keyword called let was introduced in ES6 to solve this potential issue with the var keyword.
+
+ex code: 
+
+var catName;
+var quote;
+function catTalk() {
+  "use strict";
+
+  catName = "Oliver";
+  quote = catName + " says Meow!";
+
+}
+catTalk();

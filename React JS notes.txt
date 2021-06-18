@@ -1,0 +1,39 @@
+React JS:
+
+* components
+
+Components describe a part of the user interface
+
+They are reusable and can be nested inside other components.
+
+There are two components in React:
+
+1) stateless functional component
+2) Stateful class component
+
+Note: If you create a React app, type as import React from 'react' (it's must)
+
+Notes: Exporting and importing components:
+
+In the greet.js page we exporting greet components as a default export from the greet.js, this what allow us to import the component with any name.  
+
+* Compare functional components and class components:
+
+(!) Simple function, can use function components as much as possible, absence of 'this' keyword, solution without using state, mainly responsible for UI, so that's why the functional components are also called as stateless, dumb and presentational.
+(!!) More rich feature, maintain their own private data - state, complex UI logic, Provide lifecyle hooks.
+
+----------------------------JSX-------------------------
+
+JSX differences:
+
+class -> className
+For ->htmlFor
+
+cameCase property
+
+Ex; onclick -> onClick
+    tabindex -> tabIndex
+
+
+
+
