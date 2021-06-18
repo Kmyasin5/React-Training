@@ -1,0 +1,389 @@
+JavaScript:
+
+Variables: var, let, const : these are the variables.
+
+Variable is a temporary memory location.
+eg: var msg = "Hi this is" + name + "I'm learning javascript";
+
+alert (msg);
+
+console.log(msg);	
+
+Note: let variable can able to change the value but const variable is unable to change the value once entered.
+
+--------------------------- JS Datatypes------------------
+
+Two types are there:
+
+1, Primitive datatype
+2, Reference datatype
+
+* String can accept all types of contents like abc,123,#$%
+* To know what datatype of value: typeof (value name)
+
+--------------------JS Objects-------------
+
+Need to learn a lot.
+
+--------------------JS Array-----------
+
+Note: {} is consider as an object.
+      [] is consider as a Array.
+
+In Array concept values are started as 0,1,2,3.
+
+For ex: 
+
+let favcolors = ["red", "blue","green"] which is consider a red is 0, blue is 1 and green is 2.
+
+How to check how many array? - console.log(object.fun(length))
+
+-----------------JS function-------------------
+
+eg 1:
+
+function greetuser (name) {
+
+    let msg = "Welcome " + name + " just initated JS to learn";
+
+    console.log(msg)
+}
+
+greetuser("Yasin")
+
+eg 2:
+
+function greetuser () {
+
+    let name = "Yasin";
+    let msg = "Welcome " + name + " just initated JS to learn";
+
+    console.log(msg)
+}
+
+greetuser()
+
+-----------------JS Operators Overview-----------------------
+
+We can use the operators under the variables, Variables + Operators called Expression (Alogorithm).
+
+Operators are the backbone of the programming.
+
+They are:
+
+* Arithmetic Operator.
+* Comparison Operator.
+* Assignment Operator.
+* Logical operator.
+* Bitwise Operator.
+
+* About Arithmetic Operator:
+
+Arithmetic Operators are add, sub, div , Multi.
+
+Eg: increament and decreament
+
+Increament: 
+
+let number1 = 5;
+let number2 = 20;
+
+console.log(++number1);
+console.log(number);
+
+Note: console.log(number1++);is not work , it shows the same value.
+
+Decreament: 
+
+let number1 = 5;
+let number2 = 20;
+
+console.log(--number1);
+console.log(number);
+
+Note: console.log(number1--);is not work , it shows the same value.
+
+* Assignment Operator:
+
+eg: 
+let x = 5;
+
+// it consider x++ as X +1 = 5+1 = 6.
+
+x += 5 (This is one type)
+ 
+console.log(x);
+
+eg2:
+
+let x = 5;
+
+// it consider x++ as X +1 = 5+1 = 6.
+
+x = x+5 (This is another type)
+ 
+console.log(x);
+
+----------------- Comparison Operator---------------------
+
+eg1: 
+let x = 5;
+
+console.log(x <5); //lesser than
+console.log(x <=5); //lesser than or equal to
+console.log(x >5); //greater than
+console.log(x >= 5); //greater than or equal to
+
+This above operator is called relational comparsion operator under the Comparison operator.
+
+eg2:
+
+let x = 5;
+
+console.log(x === 5); this is a equal operator.
+console.log(x !== 5); This is not a equal operator.
+
+This above operator is called equality comparison operator under the equality operator.
+
+eg3:
+
+console.log('Alen' > 'Anbu') it become result as false, because A is common and then next to A l is n is greater than l so becomes false.
+
+console.log('Alen' < 'Anbu'), now its come true.
+
+eg4:
+
+Console.log('1' < 5) JS will check inside the string that will contain any numbers, If there any number inside the string then it's consider as 5 is lesser than 1 and the result should br true.
+
+Another one:
+console.log(true == 1) is become a result as true 
+console.log(true == 0) is become a result as false.
+
+Because in binary method 0 is consider as false and 1 is consider as true.
+
+This is called different types of comparison.
+--------------------------------------------------------------
+
+------------Equality operator----------------------------
+
+Strict equality operator
+
+eg1: console.log(1===1); this is number===number , output is: true
+     console.log('1'===1 ); This string == number, output is: true
+
+lose equality operator
+
+eg1: console.log(1 == 1); This is number == number, output is: true
+     console.log('1' == 1); this is string == number, outout is: true. This is consider first value only,if the first value is string then it's consider the second value also as a string. so the out8put is true.
+
+-------------------------------JS Ternary operator-----------------
+
+App development sample:
+
+let age = 25;
+
+let type = age > 16 ? "Adult" : "child";
+console.log(type);
+
+------------------------- JS logical operator-------------
+
+* And logical operator;
+
+  return true if both operands are true, which means the operands should be same then the result will be true.
+
+eg: console.log(true && true); > output is true.
+    console.log(false && true); > output is false.
+
+* OR logical operator:
+
+  return true if anyone operands are true in the code line.
+
+eg:  console.log(false || true); > output is true.
+     
+* NOT logical operator:
+
+  If gives the result opposite that what we have given, If we give true, the output is false, and if give true the output is true. (vice versa)
+
+
+Eg for logical operator:
+
+
+let highincome = true;
+let cibil = false;
+
+let eligible = (highincome || cibil);
+
+let approvalstatus = !(eligible);
+
+console.log(eligible);
+console.log(approvalstatus);
+
+-------------------------------
+
+* Detailed view in Not operator:
+
+It has a two diiferent values like truthy and falsy.
+
+For ex: (!)if give a value of true or false, the result will be true.
+        (!!) If give a value as false or (string like) "Yasin", It will give the result as Yasin.
+
+Because it will check that if the value is boolean or not if it not boolean then it's check with the below conditions;
+
+Falsy (False)
+
+* Undefined* Null
+* 0
+* false
+* "" or '' both are same
+* Nan
+
+Truthy (True): Anything that is not falsy is called as truthy.
+
+Which means if the given value is not from the falsy value it will take it as truthy.
+
+For ex: False || true, result > true
+        False || "Yasin", result > Yasin ;because there is no any value as Yasin in the falsy value.
+        False || 3, result > If the 0 only it will be the falsy.
+
+----------------------bitwise operator----------------
+
+Its a human code -> Machine code
+
+Binary codes:
+
+If we give 1, machine will take it as 00000001
+
+If we give 2, machine will take it as 00000010
+
+If we give 3, machine will take it as 00000011
+
+
+console.log(1|2); Note it's a <- bitwise OR operator (|) not a logical operator (||)
+
+console.log(1 & 2); Note: it's bitwise AND operator not a logical operator.
+
+
+-------------------------Escaping Literal Quotes in Strings----------------------------
+
+When you are defining a string you must start and end with a single or double quote. What happens when you need a literal quote: " or ' inside of your string?
+
+In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.
+
+
+ex: var sampleStr = "Alan said, \"Peter is learning JavaScript\".";
+
+output: Alan said, "Peter is learning JavaScript".
+
+------------------------------- -Escape Sequences in Strings --------------------
+
+Quotes are not the only characters that can be escaped inside a string. There are two reasons to use escaping characters:
+
+To allow you to use characters you may not otherwise be able to type out, such as a carriage return.
+To allow you to represent multiple quotes in a string without JavaScript misinterpreting what you mean.
+
+Code	Output
+\'	single quote
+\"	double quote
+\\	backslash
+\n	newline
+\r	carriage return
+\t	tab
+\b	word boundary
+\f	form feed
+
+Note: that the backslash itself must be escaped in order to display as a backslash.
+
+code: var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+
+Output: 
+
+myStr:
+FirstLine
+	\SecondLine
+ThirdLine
+
+----------------------------Concatenating Strings with Plus Operator---------
+
+In JavaScript, when the + operator is used with a String value, it is called the concatenation operator. You can build a new string out of other strings by concatenating them together.
+
+code: var myStr = "This is the start. " + "This is the end.";
+
+---------------------------Use Bracket Notation to Find the First Character in a String ----------
+
+Bracket notation is a way to get a character at a specific index within a string.
+
+Most modern programming languages, like JavaScript, don't start counting at 1 like humans do. They start at 0. This is referred to as Zero-based indexing.
+
+For example, the character at index 0 in the word Charles is C. So if var firstName = "Charles", you can get the value of the first letter of the string by using firstName[0].
+
+----------------------Understand String Immutability-------------------------------
+
+In JavaScript, String values are immutable, which means that they cannot be altered once created.
+
+For ex: 
+
+var myStr = "Bob";
+myStr[0] = "J";
+
+cannot change the value of myStr to Job, because the contents of myStr cannot be altered. Note that this does not mean that myStr cannot be changed, just that the individual characters of a string literal cannot be changed. The only way to change myStr would be to assign it with a new string, like this:
+
+var myStr = "Bob";
+myStr = "Job";
+
+---------------------------------Use Bracket Notation to Find the Nth Character in a String---------
+
+note: Same as like topic use notation to find out the specific character.
+
+
+--------------------------Use Bracket Notation to Find the Last Character in a String-----------
+
+In order to get the last letter of a string, you can subtract one from the string's length.
+
+For example, if var firstName = "Ada", you can get the value of the last letter of the string by using firstName[firstName.length - 1].
+
+Example:
+
+var firstName = "Ada";
+var lastLetter = firstName[firstName.length - 1];
+
+----------------------Use Bracket Notation to Find the Nth-to-Last Character in a String-----------
+
+You can use the same principle we just used to retrieve the last character in a string to retrieve the Nth-to-last character.
+
+For example, you can get the value of the third-to-last letter of the var firstName = "Augusta" string by using firstName[firstName.length - 3]
+
+Example:
+
+var firstName = "Augusta";
+var thirdToLastLetter = firstName[firstName.length - 3];
+
+
+---------------------------Store Multiple Values in one Variable using JavaScript Arrays---------------
+
+With JavaScript array variables, we can store several pieces of data in one place.
+
+You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry, like this:
+
+var sandwich = ["peanut butter", "jelly", "bread"]
+
+
+------------------------------Access Array Data with Indexes-----------------------
+
+
+We can access the data inside arrays using indexes.
+
+Array indexes are written in the same bracket notation that strings use, except that instead of specifying a character, they are specifying an entry in the array. Like strings, arrays use zero-based indexing, so the first element in an array has an index of 0.
+
+
+Example
+
+var array = [50,60,70];
+array[0];
+var data = array[1];
+array[0] is now 50, and data has the value 60.
+
+
+
+
+
+
