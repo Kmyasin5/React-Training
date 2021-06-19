@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Lato:ital,wght@1,300;1,400&family=Raleway:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Raleway;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+body{
+    background-image: linear-gradient(rgb(108, 226, 247),palegreen);
+    background-size: cover;
+}
+
+.Header{
+    float: right;
+    width:30%;
+    height:60px;
+    line-height:60px;
+}
+
+ul{
+    width:85%;
+    justify-content: space-around;
+    color: white;
+}
+
+ul li{
+    font-size:20px;
+    font-family: Comfortaa;
+    font-weight: bold;
+}
+
+ul li:hover{
+    color: grey;
+}
+
+.Midpage{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span{
+    color: rgb(70, 66, 66);
+    font-size: 55px;
+    font-family: comfortaa;
+}
+
+.title{
+    font-size: 45px;
+    color: rgb(70, 187, 241);
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.sub-title{
+    font-size:18px;
+    border: 2px solid grey;
+    padding: 10px 10px;
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+Footer{
+    position: absolute;
+    height: 60px;
+    line-height:60px;
+    bottom:0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Social i{
+    font-size: 18px;
+    padding-right: 25px;
+}
+
+.copyrights{
+    font-size:16px;
+    letter-spacing:2px;
+    padding-right:10px;
+}
+
+.copyrights span{
+    color: black;
+    font-size: 13px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: comfortaa;
+}
